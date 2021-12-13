@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>Tell us something positive that happened to you today.</h2>
+    </head>
+    <body>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username"placeholder="Enter your name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"placeholder="Enter your email id" required>
+            <br>
+            <label for="number">On a scale of 1-10, how good was it?</label>
+            <input type="number" id="number" placeholder="Enter a number between 1 and 10" min="1" max="10">
+            <br>
+            <label for="dropdown" id="dropdown-label">Where did it happen?</label>
+            <select name="Location of positive event" id="dropdown" class="dropdown">
+                <option value="home">At home</option>
+                <option value="commute">On my commute</option>
+                <option value="work">At work</option>
+                <option value="outside">On the street</option>
+              <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="time-of-day">At what time of day did it happen?</label>
+            <ul id="time-of-day">
+                <li class="radio">
+                  <label>
+                    <input name="time" type="radio" value="1" class="selection">
+                    Morning
+                  </label>
+                </li>
+                <li class="radio">
+                  <label>
+                    <input name="time" type="radio" value="2" class="selection">
+                    Afternoon
+                  </label>
+                </li>
+                <li class="radio">
+                  <label>
+                    <input name="time" type="radio" value="3" class="selection">
+                    Evening
+                  </label>
+                </li>
+              </ul>
+              <label for="feelings">
+                What emotions did you experience?
+                <br>
+                (Select all that apply)
+                <div class="fields">
+                    <ul id="feelings">
+                      <li class="radio">
+                        <label>
+                          <input name="check" value="1" type="checkbox" class="selection">
+                          Excited
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label>
+                          <input name="check" value="2" type="checkbox" class="selection">
+                          Humbled
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label>
+                          <input name="check" value="3" type="checkbox" class="selection">
+                          Elated
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label>
+                          <input name="check" value="4" type="checkbox" class="selection">
+                          Loved
+                        </label>
+                      </li>
+                      <li class="radio">
+                        <label>
+                          <input name="check" value="5" type="checkbox" class="selection">
+                          Enthusiastic
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+              </label>
+              <div class="labels">
+                <label for="event-details">
+                  Please describe your positive experience.
+                </label>
+              </div>
+              <div class="fields">
+                <input type="textarea" id="event-details" class="input-fields" name="event-details" placeholder="Enter your experience here...">
+              </div>
+        </form>
+    </body>
+</html>
